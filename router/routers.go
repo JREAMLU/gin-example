@@ -1,16 +1,14 @@
 package router
 
 import (
-	"net/http"
-
+	"github.com/JREAMLU/gin-example/controller"
 	"github.com/gin-gonic/gin"
 )
 
 // GetRouters 初始化router
 func GetRouters(router *gin.Engine) *gin.Engine {
-	router.GET("/", func(c *gin.Context) {
-		c.String(http.StatusOK, "Hello World")
-	})
+	// hello world
+	router.GET("/", controller.NewHelloController().World)
 
 	return router
 }
