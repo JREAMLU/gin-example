@@ -5,7 +5,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-// GetRouters 初始化router
+// GetRouters init router
 func GetRouters(router *gin.Engine) *gin.Engine {
 	// hello world
 	router.GET("/", controller.NewHelloController().World)
