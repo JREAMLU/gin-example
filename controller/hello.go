@@ -3,6 +3,7 @@ package controller
 import (
 	"net/http"
 
+	"github.com/JREAMLU/gin-example/config"
 	"github.com/gin-gonic/gin"
 )
 
@@ -12,8 +13,12 @@ type HelloController struct {
 }
 
 // NewHelloController new hello
-func NewHelloController() *HelloController {
-	return &HelloController{}
+func NewHelloController(conf *config.HelloConfig) *HelloController {
+	return &HelloController{
+		Controller{
+			config: conf,
+		},
+	}
 }
 
 // World world

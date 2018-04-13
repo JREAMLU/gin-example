@@ -7,6 +7,9 @@ const (
 
 // HelloConfig hello config
 type HelloConfig struct {
+	Hello struct {
+		Tip string `yaml:"tip"`
+	} `yaml:"hello"`
 }
 
 // LoadConfig load config
