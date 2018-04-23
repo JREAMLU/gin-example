@@ -23,5 +23,6 @@ func NewHelloController(conf *config.HelloConfig) *HelloController {
 
 // World world
 func (h *HelloController) World(c *gin.Context) {
-	c.String(http.StatusOK, "Hello World")
+	request := c.MustGet("request").(string)
+	c.String(http.StatusOK, "Hello World", request)
 }
