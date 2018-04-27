@@ -1,9 +1,9 @@
 package router
 
 import (
-	"github.com/JREAMLU/gin-example/config"
-	"github.com/JREAMLU/gin-example/controller"
-	"github.com/JREAMLU/gin-example/middleware"
+	"github.com/JREAMLU/j-gin/config"
+	"github.com/JREAMLU/j-gin/controller"
+	"github.com/JREAMLU/j-gin/middleware"
 	"github.com/gin-gonic/gin"
 )
 

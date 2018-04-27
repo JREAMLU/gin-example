@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/JREAMLU/gin-example/config"
-	"github.com/JREAMLU/gin-example/router"
+	"github.com/JREAMLU/j-gin/config"
+	"github.com/JREAMLU/j-gin/router"
 	"github.com/gin-gonic/gin"
 )
 

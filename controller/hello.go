@@ -3,7 +3,7 @@ package controller
 import (
 	"net/http"
 
-	"github.com/JREAMLU/gin-example/config"
+	"github.com/JREAMLU/j-gin/config"
 	"github.com/gin-gonic/gin"
 )
 
@@ -24,5 +24,5 @@ func NewHelloController(conf *config.HelloConfig) *HelloController {
 // World world
 func (h *HelloController) World(c *gin.Context) {
 	request := c.MustGet("request").(string)
-	c.String(http.StatusOK, "Hello World", request)
+	c.String(http.StatusOK, "Hello World %v", request)
 }

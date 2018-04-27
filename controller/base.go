@@ -1,6 +1,6 @@
 package controller
 
-import "github.com/JREAMLU/gin-example/config"
+import "github.com/JREAMLU/j-gin/config"
 
 // Controller base controller
 type Controller struct {
