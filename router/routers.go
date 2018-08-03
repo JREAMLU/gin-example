@@ -4,6 +4,7 @@ import (
 	"github.com/JREAMLU/j-gin/config"
 	"github.com/JREAMLU/j-gin/controller"
 	"github.com/JREAMLU/j-gin/middleware"
+
 	"github.com/gin-gonic/gin"
 )
 
